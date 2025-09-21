@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: bash test.sh
+# Usage: bash test.sh [solution.py]
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -8,6 +8,18 @@ IN_DIR="$TOOLS_DIR/in"
 OUT_DIR="$TOOLS_DIR/out"
 VIS_DEBUG="$TOOLS_DIR/target/debug/vis"
 VIS_RELEASE="$TOOLS_DIR/target/release/vis"
+
+# 解答スクリプト（引数がなければ baseline.py）
+SOL_ARG="${1:-baseline.py}"
+if [[ "$SOL_ARG" = /* ]]; then
+  SOL_PATH="$SOL_ARG"
+else
+  SOL_PATH="$SCRIPT_DIR/$SOL_ARG"
+fi
+if [[ ! -f "$SOL_PATH" ]]; then
+  echo "solution not found: $SOL_PATH"
+  exit 1
+fi
 
 rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
@@ -39,16 +51,17 @@ fi
 
 echo "uv    : $(command -v uv)"
 echo "vis   : $VIS"
+echo "solve : $SOL_PATH"
 
 # 解答実行（並列）
 P=$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)
 seq 0 99 \
   | xargs -I@ printf "%s\\n" @ \
   | xargs -n1 -P"$P" -I@ bash -c '
-      ID=$(printf "0%03d" @)
       set -euo pipefail
-      uv run python "'$SCRIPT_DIR'/baseline.py" < "'$IN_DIR'/$ID.txt" > "'$OUT_DIR'/$ID.txt"
-    '
+      ID=$(printf "0%03d" "$2")
+      uv run python "$1" < "'$IN_DIR'/$ID.txt" > "'$OUT_DIR'/$ID.txt"
+    ' _ "$SOL_PATH" @
 
 # スコア集計
 echo "\n=== Scores per ID ==="
