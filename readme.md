@@ -72,7 +72,7 @@ for action in actions_list:
 #### 現状の動作（baseline.py）
 下記は `baseline.py` を可視化したアニメーションです（例）。
 
-![baseline demo](assets/baseline_demo.gif)
+![baseline demo](assets/vis.gif)
 
 
 ### ローカルテストの実行方法
