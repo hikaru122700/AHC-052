@@ -12,18 +12,30 @@ AHC052: A - Single Controller Multiple Robots（ローカル環境メモ）
 
 ディレクトリ構成（抜粋）
 - baseline.py … 参考実装（標準入力→標準出力）
-- tools_x86_64-pc-windows-gnu/ … Windows 用ツール（in/, out/, vis.exe など）
+- tools_x86_64-pc-windows-gnu/ … Windows 用ツール（今回は使用しません）
 - tools/ … Rust ソース（`cargo build --release` で vis をビルド）
 - test.sh … WSL/Linux/mac 用の一括テストスクリプト（uv 経由で baseline.py を実行し、Rust vis で採点）
 
 ローカルテストの実行方法
 
-- WSL/Linux/mac: Rust 版 vis をビルドして並列テスト（uv 必須）
+- WSL/Linux/mac: Rust 版 vis をビルドして並列テスト
+- 99個のテストケースが自動で走ります
+- ビジュアライザを見たい場合はこちらのサイト(https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja&_gl=1)にて`ファイルを選択`から`tools/out`ディレクトリを選択してください。
+
+スクリーンショット
+
+以下はビジュアライザの表示例です。画像をクリックすると公式ビジュアライザが開きます。
+
+<a href="https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja" target="_blank">
+  <img src="assets/visualizer_sample.png" alt="Visualizer Screenshot" width="420" />
+  
+</a>
+
 ```bash
-# 依存: Rust (cargo), uv（Python 実行）
 bash test.sh
-# ID ごとのスコアと合計スコアが表示されます
 ```
+
+
 
 ライセンス/出典
 - 問題は こちら（https://atcoder.jp/contests/ahc052/tasks/ahc052_a）
