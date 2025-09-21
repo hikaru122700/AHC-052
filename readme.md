@@ -70,6 +70,9 @@ for action in actions_list:
 - 続けて、各ターンに押すボタンID（0..K-1 の整数）を1 行ずつ T 行出力します。T は行数で暗黙に決まります。
 
 #### 現状の動作（baseline.py）
+
+延長戦順位で669位です。
+
 下記は `baseline.py` を可視化したアニメーションです。(seed=0)
 
 ![baseline demo](assets/vis.gif)
