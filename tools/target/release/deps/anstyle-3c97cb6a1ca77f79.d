@@ -1,0 +1,12 @@
+/mnt/c/Users/hikar/AtCoder/AHC/052/tools/target/release/deps/anstyle-3c97cb6a1ca77f79.d: /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/lib.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/macros.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/color.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/effect.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/reset.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/style.rs
+
+/mnt/c/Users/hikar/AtCoder/AHC/052/tools/target/release/deps/libanstyle-3c97cb6a1ca77f79.rlib: /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/lib.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/macros.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/color.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/effect.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/reset.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/style.rs
+
+/mnt/c/Users/hikar/AtCoder/AHC/052/tools/target/release/deps/libanstyle-3c97cb6a1ca77f79.rmeta: /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/lib.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/macros.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/color.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/effect.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/reset.rs /home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/style.rs
+
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/lib.rs:
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/macros.rs:
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/color.rs:
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/effect.rs:
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/reset.rs:
+/home/hikaru/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anstyle-1.0.0/src/style.rs:
