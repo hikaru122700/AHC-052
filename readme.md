@@ -20,16 +20,10 @@ AHC052: A - Single Controller Multiple Robots（ローカル環境メモ）
 
 - WSL/Linux/mac: Rust 版 vis をビルドして並列テスト
 - 99個のテストケースが自動で走ります
-- ビジュアライザを見たい場合はこちらのサイト(https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja&_gl=1)にて`ファイルを選択`から`tools/out`ディレクトリを選択してください。
+- ビジュアライザを見たい場合はこちらのサイトにて`ファイルを選択`から`tools/out`ディレクトリを選択してください。
 
-スクリーンショット
+(https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja&_gl=1)
 
-以下はビジュアライザの表示例です。画像をクリックすると公式ビジュアライザが開きます。
-
-<a href="https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja" target="_blank">
-  <img src="assets/visualizer_sample.png" alt="Visualizer Screenshot" width="420" />
-  
-</a>
 
 ```bash
 bash test.sh
