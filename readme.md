@@ -86,8 +86,8 @@ bash test.sh
 ```
 
 - ビジュアライザを見たい場合は以下のサイトにて`ファイルを選択`から`tools/out`ディレクトリを選択してください。
-
-(https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja&_gl=1)
+![](assets/ビジュアライザ.png)
+https://img.atcoder.jp/ahc052/ZN1uhrbm.html?lang=ja&_gl=1
 
 
 #### ライセンス/出典
