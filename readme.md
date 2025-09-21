@@ -69,6 +69,11 @@ for action in actions_list:
 - まず K 行のボタン割当を出力します（行＝ボタンID、列＝ロボットID）。各要素は `U/D/L/R/S` の1文字です。
 - 続けて、各ターンに押すボタンID（0..K-1 の整数）を1 行ずつ T 行出力します。T は行数で暗黙に決まります。
 
+#### 現状の動作（baseline.py）
+下記は `baseline.py` を可視化したアニメーションです（例）。
+
+![baseline demo](assets/baseline_demo.gif)
+
 
 ### ローカルテストの実行方法
 
